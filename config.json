@@ -1,9 +1,9 @@
 {
-	gamename: "London's Burning",
-	version: "0.1",
+	"gamename": "London's Burning",
+	"version": "0.1",
 	"initialcameraposition": 
 	{ 
 		"lat": "10",
-		"long": "10"
+		"lon": "10"
 	}
 }

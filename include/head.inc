@@ -13,5 +13,8 @@
 
 			// Start checking what's already there.
 		}
+
+		// Load the config file.
+		GetConfig("config.json", ConfigLoaded);
 	</script>
 </head>
