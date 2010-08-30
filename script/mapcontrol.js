@@ -2,8 +2,7 @@ var objCurrentLatLng;
 var objMapControl;
 
 function initialisemap()
-{
-
+{	
 	// Read the lat/long from the config file if possible.
 	if (objConfig)
 	{
@@ -21,7 +20,7 @@ function initialisemap()
 		mapTypeId: google.maps.MapTypeId.ROADMAP
 	}
 
-	objMapControl = new google.maps.Map(document.getElementById("map_canvas"), objOptions);
+	objMapControl = new google.maps.Map(document.getElementById("mapframe"), objOptions);
 
 }
   
