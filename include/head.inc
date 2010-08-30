@@ -10,14 +10,6 @@
 	<script type="text/javascript">
 		debugger;
 	
-		function ConfigLoaded()
-		{
-			// Create local/remote database contexts.
-			CreateLocalDB();
-
-			// Start checking what's already there.
-		}
-
 		// Load the config file.
 		GetConfig("config.json", ConfigLoaded);
 		
