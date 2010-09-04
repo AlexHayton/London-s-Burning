@@ -10,7 +10,7 @@ var Map =
 		var objMapInit = objConfig.initialcameraposition;
 		CurrentLatLng = new google.maps.LatLng(objMapInit.lat, objMapInit.lon);
 		
-		CurrentZoom = objMapInit.zoom 
+		CurrentZoom = parseInt(objMapInit.zoom); 
 	
 		var objOptions = {
 			zoom: CurrentZoom,

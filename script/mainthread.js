@@ -19,7 +19,7 @@ var Game =
 			//TODO
 			
 			// Change the window's title.
-			document.title = Config.GetConfig().
+			document.title = Config.GetConfig().gamename;
 			
 			// Render the map now.
 			Map.InitialiseMap();

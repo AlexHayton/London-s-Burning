@@ -1,10 +1,10 @@
 {
-	"gamename": "London's Burning",
+	"gamename": "London's Burning - London",
 	"version": "0.1",
 	"initialcameraposition": 
 	{ 
 		"lat": "51.514064",
 		"lon": "-0.088491",
-		"zoom": "2"
+		"zoom": "14"
 	}
 }

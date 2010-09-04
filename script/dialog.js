@@ -40,7 +40,7 @@ var Dialog = {
 		LogError: function(strErrorText)
 		{
 			Blocker.StopBlocking();
-			CreateDialog("Error: " + strErrorText, Dialog.Mode.OK);
+			Dialog.CreateDialog("Error: " + strErrorText, Dialog.Mode.OK);
 		}
 };
 
@@ -48,4 +48,5 @@ var Dialog = {
 Dialog.Dialog.prototype.Visible = function() 
 {
 	Dialog.objDialogDiv.title = this.header;
+	Dialog.objDialogDiv.visible = true;
 }

@@ -15,7 +15,7 @@ var Config =
 			funcCallback();
 		}
 		$.getJSON(strConfigFile, funcProcess);
-	}
+	},
 
 	GetConfig: function()
 	{
