@@ -1,0 +1,2 @@
+sudo cp -rf /home/alex/workspace/London-s-Burning/* /var/www/London-s-Burning
+echo \*\* Pushed files to local web!

@@ -1,15 +1,24 @@
 var objConfig;
 
-// Make sure to define the "configloaded" function!
-// We load the game config dynamically to prevent
-function GetConfig(strConfigFile, funcCallback)
+var Config =
 {
-	// Define an internal function to handle the config 
-	var funcProcess = function (objData, strStatus)
+	objConfig: undefined, 
+	// Make sure to define the "configloaded" function!
+	// We load the game config dynamically to prevent
+	LoadConfig: function(strConfigFile, funcCallback)
 	{
-		// Save the data away to the global config object.	
-		objConfig = objData;
-		funcCallback();
+		// Define an internal function to handle the config 
+		var funcProcess = function (objData, strStatus)
+		{
+			// Save the data away to the global config object.	
+			objConfig = objData;
+			funcCallback();
+		}
+		$.getJSON(strConfigFile, funcProcess);
 	}
-	$.getJSON(strConfigFile, funcProcess);
-}
+
+	GetConfig: function()
+	{
+		return objConfig; 
+	}
+};
